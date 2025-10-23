@@ -64,8 +64,8 @@ const corrigirEncoding = (text: string): string => {
 
 export async function carregarDadosCSV(): Promise<Imovel[]> {
   try {
-    // Especificar encoding no fetch
-    const response = await fetch('/data/centro_imoveis_abandonados.csv', {
+    // Especificar encoding no fetch - agora buscando da pasta public
+    const response = await fetch('/centro_imoveis_abandonados.csv', {
       headers: {
         'Content-Type': 'text/csv; charset=windows-1252'
       }
