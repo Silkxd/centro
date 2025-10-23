@@ -20,9 +20,9 @@ export interface FiltrosDashboard {
   processoSEI?: string;
   edital?: string;
   endereco?: string;
-  tipo?: string[];
-  zona?: string[];
-  status?: string[];
+  tipo?: string;
+  zona?: string;
+  status?: string;
 }
 
 export interface EstatisticasGerais {

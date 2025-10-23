@@ -106,8 +106,7 @@ const FiltrosDashboard: React.FC<FiltrosDashboardProps> = ({
   };
 
   const temFiltrosAtivos = Object.values(filtros).some(valor => 
-    valor !== undefined && valor !== '' && 
-    (Array.isArray(valor) ? valor.length > 0 : true)
+    valor !== undefined && valor !== ''
   );
 
   return (
